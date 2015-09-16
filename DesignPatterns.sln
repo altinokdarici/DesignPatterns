@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "CreationalPatterns\FactoryPattern\FactoryPattern.csproj", "{2A4FD7DE-8F71-4620-BFDB-C3D27385573D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPatternWithReflaction", "CreationalPatterns\FactoryPatternWithReflaction\FactoryPatternWithReflaction.csproj", "{43EB846A-3F11-4777-B92E-BF131C441B6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{893EAC63-D69F-4CB1-93CC-2579346D977F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A4FD7DE-8F71-4620-BFDB-C3D27385573D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A4FD7DE-8F71-4620-BFDB-C3D27385573D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A4FD7DE-8F71-4620-BFDB-C3D27385573D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A4FD7DE-8F71-4620-BFDB-C3D27385573D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43EB846A-3F11-4777-B92E-BF131C441B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EB846A-3F11-4777-B92E-BF131C441B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43EB846A-3F11-4777-B92E-BF131C441B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43EB846A-3F11-4777-B92E-BF131C441B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A4FD7DE-8F71-4620-BFDB-C3D27385573D} = {893EAC63-D69F-4CB1-93CC-2579346D977F}
+		{43EB846A-3F11-4777-B92E-BF131C441B6F} = {893EAC63-D69F-4CB1-93CC-2579346D977F}
+	EndGlobalSection
+EndGlobal
