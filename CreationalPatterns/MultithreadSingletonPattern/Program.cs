@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SingletonPattern
+namespace MultithreadSingletonPattern
 {
-
     sealed class SocketManager
     {
-
+        static readonly object syncRoot = new object();
         public DateTime CreatedAt { get; private set; }
         public SocketManager()
         {
@@ -22,11 +21,15 @@ namespace SingletonPattern
         private static SocketManager activeConnection;
         public static SocketManager GetSocketManager()
         {
-
-            //eger daha once connection yaratilmamis ise yeni bir connection yaratiyoruz.
             if (activeConnection == null)
-                activeConnection = new SocketManager();
-
+            {
+                lock (syncRoot)
+                {
+                    //eger daha once connection yaratilmamis ise yeni bir connection yaratiyoruz.
+                    if (activeConnection == null)
+                        activeConnection = new SocketManager();
+                }
+            }
 
             //yeni yaratilan veya zaten var olan, sonuc olarak tek bir tane olan active connection'i return ediyoruz.
             return activeConnection;
