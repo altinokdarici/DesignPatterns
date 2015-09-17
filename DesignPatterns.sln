@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "Creatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultithreadSingletonPattern", "CreationalPatterns\MultithreadSingletonPattern\MultithreadSingletonPattern.csproj", "{8F72CF18-ED26-4960-891F-D7214AD7F38A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticInitializationSingletonPattern", "CreationalPatterns\StaticInitializationSingletonPattern\StaticInitializationSingletonPattern.csproj", "{8F332BA5-6D1E-4426-B6F4-FF40F54045C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{8F72CF18-ED26-4960-891F-D7214AD7F38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F72CF18-ED26-4960-891F-D7214AD7F38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F72CF18-ED26-4960-891F-D7214AD7F38A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F332BA5-6D1E-4426-B6F4-FF40F54045C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F332BA5-6D1E-4426-B6F4-FF40F54045C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F332BA5-6D1E-4426-B6F4-FF40F54045C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F332BA5-6D1E-4426-B6F4-FF40F54045C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +50,6 @@ Global
 		{43EB846A-3F11-4777-B92E-BF131C441B6F} = {893EAC63-D69F-4CB1-93CC-2579346D977F}
 		{2A4533BF-63A3-4BA2-A0EF-5339415BCD62} = {893EAC63-D69F-4CB1-93CC-2579346D977F}
 		{8F72CF18-ED26-4960-891F-D7214AD7F38A} = {893EAC63-D69F-4CB1-93CC-2579346D977F}
+		{8F332BA5-6D1E-4426-B6F4-FF40F54045C0} = {893EAC63-D69F-4CB1-93CC-2579346D977F}
 	EndGlobalSection
 EndGlobal

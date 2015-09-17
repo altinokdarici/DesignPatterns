@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MultithreadSingletonPattern
 {
-    sealed class SocketManager
+   sealed class SocketManager
     {
         static readonly object syncRoot = new object();
         public DateTime CreatedAt { get; private set; }
@@ -44,10 +44,11 @@ namespace MultithreadSingletonPattern
             {
                 // dongu icerisinde surekli olarak getsocketmanager kullanıyorum, geri donen socket manager ilk defasında yaaratılan oluyor. 
                 //Bu gibi durumlarda Singleton kullanmak ileride developerlarin hata yapmasına engel oluyor.
-                SocketManager sm = SocketManager.GetSocketManager();
-
+            
                 Console.WriteLine("Enter to see the time that Socket manager has been created");
                 Console.ReadLine();
+                SocketManager sm = SocketManager.GetSocketManager();
+
                 Console.WriteLine("Date:{0}\n", sm.CreatedAt);
 
                 Console.WriteLine("Press CTRL+C to exit");
